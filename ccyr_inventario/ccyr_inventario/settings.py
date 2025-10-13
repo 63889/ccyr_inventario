@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'ccyr_inventario.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ccyr_inventario',
+        'USER': 'user',
+        'PASSWORD': 'pass',
+        'PORT': 5433,
+        'HOST': 'localhost'
     }
 }
 
